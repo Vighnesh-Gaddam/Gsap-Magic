@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <main>
+        <h1>Gsap</h1>
+        Note: You have to use Gsap cdn in order to use Every Gsap Funtionality
+        <a
+            href="https://gsap.com/docs/v3/Installation/?checked=core%2CscrollTrigger&tab=cdn&module=esm&method=private+registry&tier=free&club=false&require=false&trial=true&plugins=ScrollTrigger">Click
+            here</a>
+    </main>
+    <section>
+
+        <div class="Container">
+            <h2>gsap.to</h2>
+            <p><b>.to:</b> Animates an element from its initial position to final position(basically 0 to distance given
+                in x-axis).</p>
+            <div id="box" class="box"></div>
+            <div>
+                <button id="moveRight" onclick="MoveRight()">Click to Animate</button>
+                <button id="reset" onclick="Reset1()">Reset Position</button>
+                <a href="https://github.com/Vighnesh-Gaddam/Gsap-Magic/tree/main/1.MoveRight">Source Code</a>
+            </div>
+        </div>
+
+
+        <div class="Container">
+            <h2>gsap.from</h2>
+            <p><b>.from:</b> Animates an element from its final position to initial position(basically distance given in
+                x-axis to 0).</p>
+            <div id="box2" class="box"></div>
+            <div>
+                <button id="gsap.from" onclick="fromAnimation()">Click to Animate</button>
+                <button id="reset2" onclick="Reset2()">Reset Position</button>
+                <a href="https://github.com/Vighnesh-Gaddam/Gsap-Magic/tree/main/2.%20gsap.from">Source Code</a>
+            </div>
+        </div>
+
+        <div class="Container">
+            <h2>Rotate Property</h2>
+            <div id="box3" class="box"></div>
+            <div>
+                <button id="Rotate" onclick="RotateAnimation()">Click to Animate</button>
+                <button id="reset3" onclick="Reset3()">Reset Position</button>
+                <a href="https://github.com/Vighnesh-Gaddam/Gsap-Magic/tree/main/3.%20rotate">Source Code</a>
+            </div>
+        </div>
+
+        <div class="Container" style="background-color: #555;">
+
+            <div class="Container">
+                <h2>Stagger:1 (Starts animation from first h1)</h2>
+                <h1 class="startFromFirst">Hello from 1</h1>
+                <h1 class="startFromFirst">Hello from 2</h1>
+                <h1 class="startFromFirst">Hello from 3</h1>
+                <div>
+                    <button id="positiveStagger" onclick="PositiveStagger()">Click to Animate</button>
+                    <a href="https://github.com/Vighnesh-Gaddam/Gsap-Magic/tree/main/4.%20stagger">Source Code</a>
+                </div>
+            </div>
+
+            <div class="Container">
+                <h2>Stagger:-1 (Starts animation from last h1)</h2>
+                <h1 class="startFromLast">Hello from 1</h1>
+                <h1 class="startFromLast">Hello from 2</h1>
+                <h1 class="startFromLast">Hello from 3</h1>
+                <div>
+                    <button id="negativeStagger" onclick="NegativeStagger()">Click to Animate</button>
+                    <a href="https://github.com/Vighnesh-Gaddam/Gsap-Magic/tree/main/4.%20stagger">Source Code</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="Container" style="background-color: #555;">
+
+            <div class="Container">
+                <h2>Repeat n times</h2>
+                <div id="box4" class="box"></div>
+                <div>
+                    <button id="Rotate" onclick="repeatNTimes()">Click to Animate</button>
+                    <a href="https://github.com/Vighnesh-Gaddam/Gsap-Magic/tree/main/5.YoYo">Source Code</a>
+                </div>
+            </div>
+
+            <div class="Container">
+                <h2>Repeat infinite times</h2>
+                <div id="box5" class="box"></div>
+                <div>
+                    <button id="Rotate" onclick="repeatInfinite()">Click to Animate</button>
+                    <a href="https://github.com/Vighnesh-Gaddam/Gsap-Magic/tree/main/5.YoYo">Source Code</a>
+                </div>
+            </div>
+
+            <div class="Container">
+                <h2>Repeat Yoyo</h2>
+                <div id="box6" class="box"></div>
+                <div>
+                    <button id="Rotate" onclick="repeatYoyo()">Click to Animate</button>
+                    <a href="https://github.com/Vighnesh-Gaddam/Gsap-Magic/tree/main/5.YoYo">Source Code</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="Container">
+            <h2>Timeline</h2>
+            <p></p>
+            <div id="box7" class="timeline" style="background-color: red;"></div>
+            <div id="box8" class="timeline" style="background-color: blue;"></div>
+            <div id="box9" class="timeline" style="background-color: green;"></div>
+            <div>
+                <button id="timeline" onclick="gsapTimeline()">Click to Animate With Timeline</button>
+                <button id="timeline" onclick="timelineInWrongWay()">Click to Animate without timeline</button>
+                <button id="reset" onclick="Reset4()">Reset Position</button>
+                <a href="https://github.com/Vighnesh-Gaddam/Gsap-Magic/tree/main/6.%20Timeline">Source Code</a>
+            </div>
+        </div>
+        <div class="Container">
+            <h2>ScrollTrigger Document</h2>
+            <a href="https://docs.google.com/document/d/1bVMPNOHPc5Un_Fho97xZ-DTFi7OuDgF_q1MJKJL_E90/edit?usp=sharing">Source Code</a>
+        </div>
+
+        <div class="Container" id="projects">
+            <h2>Projects</h2>
+            <div class="up">
+                <div id="project1" class="project" onclick="redirectTo('../Projects/P1-Cursor/index.html')">Cursor</div>
+                <div id="project2" class="project" onclick="redirectTo('../Projects/P2-Timeline/index.html')">Timeline
+                </div>
+                <div id="project3" class="project" onclick="redirectTo('../Projects/P3-TextAnimation/index.html')">Text
+                    Animation</div>
+            </div>
+            <div class="down">
+                <div id="project4" class="project"
+                    onclick="redirectTo('../Projects/P4-ScrollingTextAnimation/index.html')">Scroll based Text Animation
+                </div>
+                <div id="project5" class="project" onclick="redirectTo('../Projects/P5-Website/index.html')">Complete
+                    Website using GSAP</div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- GSAP CDN -->
+
+    <script>
+        function redirectTo(url) {
+            window.location.href = url;
+        }
+    </script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

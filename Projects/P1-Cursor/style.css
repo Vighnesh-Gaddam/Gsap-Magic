@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-color: #222;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #cursor{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: fixed;
+    font-size: 6px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+} */
+
+#cursor {
+    height: 2%; /* Adjust as per your design */
+    width: 20px; /* Adjust as per your design */
+    border-radius: 50%;
+    background-color: white;
+    position: fixed;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 9;
+    transition: transform 0.2s ease;
+    border: 2px solid white; /* Optional for styling */
+    /* display: none;  */
+}
+
+#cursor.zoomed {    
+    display: block; /* Displayed only during hover */
+    background-size: 1500%; /* Double the size for zoom */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+#image{
+    height: min-content;
+    width: 60vw;
+    position: relative;
+}
+
+#image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#overlay{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index:10;
+}
