@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%; 
+    background-color: #222;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.container{
+    height:100vh;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    height:100vh;
+    background-color: tomato;
+    display: flex;
+    align-items: center;
+    text-align: start;
+}
+
+.text h1{
+    font-family:cursive;
+    font-size: 40vw;
+}
+
+#box{
+    width: 200px;
+    height: 200px;
+    background-image: url('https://imgs.search.brave.com/NaDDjSX3QXU-04z5jEIziIY6ww1QLwFnktJ5ZF8RI0A/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA5LzYwLzkyLzIz/LzM2MF9GXzk2MDky/MjMyNV9Renp0emlr/cXllU3dsQWxxUFd5/NkZjSzdpOTRiV2t2/bi5qcGc');
+}
